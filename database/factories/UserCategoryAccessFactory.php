@@ -21,9 +21,9 @@ class UserCategoryAccessFactory extends Factory
         $category_id = Category::pluck('id')->random(20);
         return [
             //
-            'accessable_category'=>[
+            'accessable_category'=>
                 json_encode($category_id)
-            ]
+            
             
         ];
     }
